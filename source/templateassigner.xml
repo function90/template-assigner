@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>plg_system_templateassigner</name>
+	<author>Function90.com</author>
+	<creationDate>August 2013</creationDate>
+	<copyright>Copyright (C) 20012 Function90.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>dev.function90@gmail.com</authorEmail>
+	<authorUrl>www.function90.com</authorUrl>
+	<version>0.0.1</version>
+	<description>Template Assigner</description>
+	<files>
+		<filename plugin="templateassigner">templateassigner.php</filename>
+		<folder>fields</folder>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_templateassigner.ini</language>
+		<language tag="en-GB">en-GB.plg_system_templateassigner.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="group_template_mapping"
+					type="fta.mapping"
+					default=""
+					label="PLG_SYSTEM_TEMPLATE_ASSIGNER_GROUP_TEMPLATE_MAPPING_LABEL"
+					description="PLG_SYSTEM_TEMPLATE_ASSIGNER_GROUP_TEMPLATE_MAPPING_DESC"
+					addfieldpath="/plugins/system/templateassigner/fields" 
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
