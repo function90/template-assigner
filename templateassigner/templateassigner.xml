@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>dev.function90@gmail.com</authorEmail>
 	<authorUrl>www.function90.com</authorUrl>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<description>Template Assigner</description>
 	<files>
 		<filename plugin="templateassigner">templateassigner.php</filename>

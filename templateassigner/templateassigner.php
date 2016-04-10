@@ -13,6 +13,11 @@ class plgSystemTemplateassigner extends JPlugin
 {
 	public function onAfterInitialise()
 	{
+		$app = JFactory::getApplication();
+		if($app->isAdmin()){
+			return true;
+		}
+		
 		$mapping = $this->params->get('group_template_mapping', '');
 		if(empty($mapping)){
 			return true;  // do nothing
@@ -27,7 +32,7 @@ class plgSystemTemplateassigner extends JPlugin
 		if(!isset($mapping->$group)){
 			return true;
 		}
-		
+	
 		JFactory::getApplication()->input->set('templateStyle', $mapping->$group);
 	}
 }
